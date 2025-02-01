@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="main">
+    <div class="fstdiv">
+        <h1 id="genPass"></h1>
+        <i class="fa-solid fa-copy" id="copybtn"></i>
+
+    </div>
+    <div class="snddiv">
+        <input type="range" id="range" min="4" max="20" value="8">
+        <p id="rangeval"></p>
+
+    </div>
+
+ 
+      <div class="trddiv">
+        <input type="checkbox" id="capLet">
+        <label for="capLet">Upper Case</label>
+        <br>
+        <input type="checkbox" id="num">
+        <label for="num">Numbers</label>
+        <br>
+        <input type="checkbox" id="spclchar">
+        <label for="spclchar">Special Character</label>
+        <br>
+        <input type="checkbox" id="smlLet">
+        <label for="smlLet">Lower Case</label>
+      </div>
+       <div class="btnclass">
+        <button class="genbtn" id="passBtn">Generate Password</button>
+       </div>
+
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
